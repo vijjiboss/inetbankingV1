@@ -1,51 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extentreports>
-	<configuration>
-		<!-- report theme -->
-		<!-- standard, dark -->
-		<theme>standard</theme>
-
-		<!-- view style -->
-		<!-- alt-view -->
-		<viewstyle></viewstyle>
-
-		<!-- document encoding -->
-		<!-- defaults to UTF-8 -->
-		<encoding>UTF-8</encoding>
-
-		<!-- offline report -->
-		<enableOfflineMode>false</enableOfflineMode>
-
-		<!-- enable or disable time line on dash board -->
-		<enableTimeline>true</enableTimeline>
-
-		<!-- protocol for script and style sheets -->
-		<!-- defaults to https -->
-		<protocol>https</protocol>
-
-		<!-- title of the document -->
-		<documentTitle>Extent Framework</documentTitle>
-
-		<!-- report name - displayed at top-nav -->
-		<reportName>Build 1</reportName>
-
-		<!-- time stamp format -->
-		<timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
-
-		<!-- custom java script -->
-		<scripts>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>standard</theme>
+    
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+        
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>http</protocol>
+        
+        <!-- title of the document -->
+        <documentTitle>Banking Project</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+        <reportName>FunctionalTest Report
+         <![CDATA[
+                <img src='F:\APCHEJMETERWORKSPACE\EclipseForSelinium\inetbankingV1\test-output\bullet_point.png'/>
+            ]]>
+        </reportName>
+        
+        
+        <!-- location of charts in the test view -->
+        <!-- top, bottom -->
+        <testViewChartLocation>bottom</testViewChartLocation>
+      
+        <!-- custom javascript -->
+        <scripts>
             <![CDATA[
                 $(document).ready(function() {
                     
                 });
             ]]>
-		</scripts>
-
-		<!-- custom styles -->
-		<styles>
+        </scripts>
+        
+        <!-- custom styles -->
+        <styles>
             <![CDATA[
-                
-            ]]>
-		</styles>
-	</configuration>
+            .report-name { padding-left: 18px; } .report-name > img { float: 
+      left;height: 90%;margin-left: 30px;margin-top: 3px;width: auto; }
+        ]]>
+        </styles>
+    </configuration>
 </extentreports>

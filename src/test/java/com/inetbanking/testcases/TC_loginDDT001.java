@@ -13,7 +13,6 @@ import com.inetbanking.utilities.Xlutils;
 public class TC_loginDDT001 extends BaseClass{
 	@Test(dataProvider="logindata")
 	public void loginDDT(String uname,String pwd) throws InterruptedException {
-		System.out.println("vijay");
 		loginpage lp=new loginpage(driver);
 		lp.setusername(uname);
 		logger.info("user name provided sucessfully");
@@ -59,7 +58,7 @@ public class TC_loginDDT001 extends BaseClass{
 	}
 	@DataProvider(name="logindata")
 	String[][] getData() throws IOException{
-		String path="F:/APCHEJMETERWORKSPACE/EclipseForSelinium/inetbankingV1/src/test/java/com/inetbanking/testdata/logindata.xlsx";
+		String path=System.getProperty("user.dir")+"/src/test/java/com/inetbanking/testdata/logindata.xlsx";
 		int rowcount=Xlutils.getRowCount(path,"Sheet1");
 		int colcount=Xlutils.getCellCount(path,"Sheet1",2);
 		String logindata[][] = new String[rowcount][colcount];

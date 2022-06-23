@@ -1,21 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 223.101 s <<< FAILURE! - in TestSuite
-logintestcase(com.inetbanking.testcases.LoginTestCase_001)  Time elapsed: 47.808 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at com.inetbanking.testcases.LoginTestCase_001.logintestcase(LoginTestCase_001.java:37)
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 299.435 s <<< FAILURE! - in TestSuite
+logintestcase(com.inetbanking.testcases.LoginTestCase_001)  Time elapsed: 96.859 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'ANJU', ip: '192.168.96.70', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [46a2927628868b639f369cda619af60c, clickElement {id=802f5fd1-7f37-4e2a-92f3-94c142616119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Windows\TEMP\scoped_dir5...}, goog:chromeOptions: {debuggerAddress: localhost:65242}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65242/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (46a2927628868b639f369cda619af60c)] -> xpath: //a[text()='Log out']]
+Session ID: 46a2927628868b639f369cda619af60c
+	at com.inetbanking.testcases.LoginTestCase_001.logintestcase(LoginTestCase_001.java:32)
 
-AddNewCustomer(com.inetbanking.testcases.TC_AddNewCustomer_002)  Time elapsed: 56.783 s  <<< FAILURE!
+AddNewCustomer(com.inetbanking.testcases.TC_AddNewCustomer_002)  Time elapsed: 86.68 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='dismiss-button']/div/span"}
   (Session info: chrome=102.0.5005.115)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
-System info: host: 'ANJU', ip: '192.168.43.17', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+System info: host: 'ANJU', ip: '192.168.96.70', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1142a4e1204f2cf323f9062fdf84e8a5, findElement {using=xpath, value=//div[@id='dismiss-button']/div/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Windows\TEMP\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:55472}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55472/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1142a4e1204f2cf323f9062fdf84e8a5
+Command: [7e4c9e330e61503cfd5d135204df99a3, findElement {using=xpath, value=//div[@id='dismiss-button']/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Windows\TEMP\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:61757}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61757/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e4c9e330e61503cfd5d135204df99a3
 	at com.inetbanking.testcases.TC_AddNewCustomer_002.AddNewCustomer(TC_AddNewCustomer_002.java:38)
 

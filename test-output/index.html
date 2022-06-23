@@ -5,9 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -24,9 +23,8 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-inetbankingV1" class="navigator-link">
-              <span class="suite-name border-passed">inetbankingV1</span>
+              <span class="suite-name border-failed">inetbankingV1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-inetbankingV1" class="navigator-link ">
-                    <span>F:\APCHEJMETERWORKSPACE\EclipseForSelinium\inetbankingV1\TextNg.xml</span>
+                    <span>F:\APCHEJMETERWORKSPACE\EclipseForSelinium\inetbankingV1\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +91,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-inetbankingV1" class="hide-methods failed suite-inetbankingV1"> (hide)</a> <!-- hide-methods failed suite-inetbankingV1 -->
+                      <a href="#" panel-name="suite-inetbankingV1" class="show-methods failed suite-inetbankingV1"> (show)</a> <!-- show-methods failed suite-inetbankingV1 -->
+                    </span>
+                    <div class="method-list-content failed suite-inetbankingV1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-inetbankingV1" title="com.inetbanking.testcases.TC_AddNewCustomer_002" class="method navigator-link" hash-for-method="AddNewCustomer">AddNewCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-inetbankingV1" title="com.inetbanking.testcases.TC_loginDDT001" class="method navigator-link" hash-for-method="loginDDT(mgr412374, nUehAm)">loginDDT(mgr412374, nUehAm)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-inetbankingV1" title="com.inetbanking.testcases.TC_loginDDT001" class="method navigator-link" hash-for-method="loginDDT(mngr412374, nUnehAm)">loginDDT(mngr412374, nUnehAm)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-inetbankingV1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-inetbankingV1" class="hide-methods passed suite-inetbankingV1"> (hide)</a> <!-- hide-methods passed suite-inetbankingV1 -->
+                      <a href="#" panel-name="suite-inetbankingV1" class="show-methods passed suite-inetbankingV1"> (show)</a> <!-- show-methods passed suite-inetbankingV1 -->
+                    </span>
+                    <div class="method-list-content passed suite-inetbankingV1">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-inetbankingV1" title="com.inetbanking.testcases.TC_loginDDT001" class="method navigator-link" hash-for-method="loginDDT(mngr417604, UhagyqE)">loginDDT(mngr417604, UhagyqE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-inetbankingV1" title="com.inetbanking.testcases.LoginTestCase_001" class="method navigator-link" hash-for-method="logintestcase">logintestcase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-inetbankingV1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -105,20 +146,126 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-inetbankingV1" class="panel inetbankingV1">
+          <div class="suite-inetbankingV1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.inetbanking.testcases.TC_AddNewCustomer_002</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddNewCustomer">
+                  </a> <!-- AddNewCustomer -->
+                  <span class="method-name">AddNewCustomer</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#google_ads_iframe_\/24132379\/INTERSTITIAL_DemoGuru99_0&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;ANJU&apos;, ip: &apos;192.168.43.17&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4465a78c58d746734afb6db07798b4a, findElement {using=id, value=google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\anjan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51128/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e4465a78c58d746734afb6db07798b4a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+	at com.inetbanking.testcases.TC_AddNewCustomer_002.AddNewCustomer(TC_AddNewCustomer_002.java:31)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-inetbankingV1-class-failed -->
+          <div class="suite-inetbankingV1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.inetbanking.testcases.TC_loginDDT001</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDDT(mgr412374, nUehAm)">
+                  </a> <!-- loginDDT(mgr412374, nUehAm) -->
+                  <span class="method-name">loginDDT</span>
+                  <span class="parameters">(mgr412374, nUehAm)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.inetbanking.testcases.TC_loginDDT001.loginDDT(TC_loginDDT001.java:31)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDDT(mngr412374, nUnehAm)">
+                  </a> <!-- loginDDT(mngr412374, nUnehAm) -->
+                  <span class="method-name">loginDDT</span>
+                  <span class="parameters">(mngr412374, nUnehAm)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.inetbanking.testcases.TC_loginDDT001.loginDDT(TC_loginDDT001.java:31)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-inetbankingV1-class-failed -->
+          <div class="suite-inetbankingV1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.inetbanking.testcases.TC_loginDDT001</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDDT(mngr417604, UhagyqE)">
+                  </a> <!-- loginDDT(mngr417604, UhagyqE) -->
+                  <span class="method-name">loginDDT</span>
+                  <span class="parameters">(mngr417604, UhagyqE)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-inetbankingV1-class-passed -->
+          <div class="suite-inetbankingV1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.inetbanking.testcases.LoginTestCase_001</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintestcase">
+                  </a> <!-- logintestcase -->
+                  <span class="method-name">logintestcase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-inetbankingV1-class-passed -->
         </div> <!-- panel inetbankingV1 -->
         <div panel-name="test-xml-inetbankingV1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\APCHEJMETERWORKSPACE\EclipseForSelinium\inetbankingV1\TextNg.xml</span>
+            <span class="header-content">F:\APCHEJMETERWORKSPACE\EclipseForSelinium\inetbankingV1\TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;inetbankingV1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.inetbanking.utilities.Listnerclass&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;BankingApp Test&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.inetbanking.testcases.LoginTestCase_001&quot;/&gt;
+      &lt;class name=&quot;com.inetbanking.testcases.TC_AddNewCustomer_002&quot;/&gt;
+      &lt;class name=&quot;com.inetbanking.testcases.TC_loginDDT001&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BankingApp Test --&gt;
 &lt;/suite&gt; &lt;!-- inetbankingV1 --&gt;
@@ -132,7 +279,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">BankingApp Test (1 class)</span>
+                <span class="test-name">BankingApp Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -158,12 +305,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'logintestcase')
+data.setCell(0, 2, 'com.inetbanking.testcases.LoginTestCase_001')
+data.setCell(0, 3, 130869);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginDDT')
+data.setCell(1, 2, 'com.inetbanking.testcases.TC_loginDDT001')
+data.setCell(1, 3, 126527);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AddNewCustomer')
+data.setCell(2, 2, 'com.inetbanking.testcases.TC_AddNewCustomer_002')
+data.setCell(2, 3, 114396);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginDDT')
+data.setCell(3, 2, 'com.inetbanking.testcases.TC_loginDDT001')
+data.setCell(3, 3, 57177);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginDDT')
+data.setCell(4, 2, 'com.inetbanking.testcases.TC_loginDDT001')
+data.setCell(4, 3, 51155);
 window.suiteTableData['inetbankingV1']= { tableData: data, tableDiv: 'times-div-inetbankingV1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-inetbankingV1">
               </div> <!-- times-div-inetbankingV1 -->
             </div> <!-- times-div -->
@@ -188,10 +355,67 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inetbanking.testcases.LoginTestCase_001</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">logintestcase</span>
+                <span class="method-start">58108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">188995 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inetbanking.testcases.TC_AddNewCustomer_002</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">189331 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddNewCustomer</span>
+                <span class="method-start">245391 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">359979 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inetbanking.testcases.TC_loginDDT001</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">360323 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDDT(mngr412374, nUnehAm)</span>
+                <span class="method-start">417029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginDDT(mgr412374, nUehAm)</span>
+                <span class="method-start">474352 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginDDT(mngr417604, UhagyqE)</span>
+                <span class="method-start">525654 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">652186 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

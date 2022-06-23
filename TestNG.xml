@@ -3,15 +3,16 @@
 
 <suite name="inetbankingV1">
 
-	<!-- <listeners>
-		<listener class-name="com.inetbanking.utilities.Reporting"/>
-	</listeners> --> 
+	<listeners>
+		<listener class-name="com.inetbanking.utilities.Listnerclass" />
+	</listeners>
 
 	<test name="BankingApp Test">
 		<parameter name="Browser" value="Chrome" />
 		<classes>
 			<class name="com.inetbanking.testcases.LoginTestCase_001" />
 			<class name="com.inetbanking.testcases.TC_AddNewCustomer_002" />
+			<class name="com.inetbanking.testcases.TC_loginDDT001" />
 		</classes>
 	</test>
 </suite>

@@ -25,47 +25,43 @@ public class TC_AddNewCustomer_002 extends BaseClass {
 
 		driver.findElement(By.xpath("//a[text()='New Customer']")).click();
 		logger.info("add new customer page is opened");
-		/*
-		 * driver.findElement(By.xpath(
-		 * "//ins[@id='gpt_unit_/24132379/INTERSTITIAL_DemoGuru99_0']")).click();
-		 */
 
 		// HOW TO HANDLE WITH GOOGLE ADVERTISEMENTS
-		WebElement frame1 = driver.findElement(By.id("google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0"));
-		driver.switchTo().frame(frame1);
-		WebElement frame2 = driver.findElement(By.id("ad_iframe"));
-		driver.switchTo().frame(frame2);
-		driver.findElement(By.xpath("//div[@id='dismiss-button']/div/span")).click();
-		driver.switchTo().defaultContent();
 		
-		logger.info("google add is avoided");
-		
+		  WebElement frame1 = driver.findElement(By.id(
+		  "google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0"));
+		  driver.switchTo().frame(frame1); WebElement frame2 =
+		  driver.findElement(By.id("ad_iframe")); driver.switchTo().frame(frame2);
+		  driver.findElement(By.xpath("//div[@id='dismiss-button']/div/span")).click();
+		  driver.switchTo().defaultContent();
+		  
+		  logger.info("google add is avoided");
+		 
 
 		driver.findElement(By.xpath("//input[@name='name']")).sendKeys("anjani devi");
 		driver.findElement(By.xpath("(//input[@name='rad1'])[1]")).click();
 		driver.findElement(By.xpath("//input[@name='dob']")).sendKeys("15-08-1990");
-		driver.findElement(By.xpath("//textarea[@name='addr']")).sendKeys("door no 486g indira nagar colony 3 town area");
+		driver.findElement(By.xpath("//textarea[@name='addr']"))
+				.sendKeys("door no 486g indira nagar colony 3 town area");
 		driver.findElement(By.xpath("//input[@name='city']")).sendKeys("Narasaraopet");
 		driver.findElement(By.xpath("//input[@name='state']")).sendKeys("Andhrapradesh");
 		driver.findElement(By.xpath("//input[@name='pinno']")).sendKeys("522420");
 		driver.findElement(By.xpath("//input[@name='telephoneno']")).sendKeys("9908356885");
-		String newemail=email()+"@gmail.com";
+		String newemail = email() + "@gmail.com";
 		driver.findElement(By.xpath("//input[@name='emailid']")).sendKeys(newemail);
-		String newpassword=email();
+		String newpassword = email();
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(newpassword);
 		driver.findElement(By.xpath("//input[@name='sub']")).click();
 		logger.info("details submitted sucessfully");
 		Thread.sleep(3000);
-		System.out.println("current page tittle is :"+driver.getTitle());
+		System.out.println("current page tittle is :" + driver.getTitle());
 		logger.info("Customer Registered Successfully!!!");
 		boolean page = driver.getPageSource().contains("Customer Registered Successfully!!!");
-		if(page==true) {
+		if (page == true) {
 			Assert.assertTrue(true);
-		}		else {
-			screencapture(driver,"AddNewCustomer");
+		} else {
 			Assert.assertTrue(false);
 		}
-		
 
 		/*
 		 * driver.findElement(By.xpath("//a[text()='Delete Customer']")).click();

@@ -1,12 +1,12 @@
 package com.inetbanking.testcases;
 
 import java.io.File;
-import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.lang3.RandomUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
@@ -31,6 +31,7 @@ public class BaseClass {
 	public String username = rc.getusername();
 	public String password = rc.getpassword();
 
+	@SuppressWarnings("deprecation")
 	@Parameters("Browser")
 	@BeforeClass
 	public void setup(String br) {
@@ -67,14 +68,20 @@ public class BaseClass {
 		driver.quit();
 	}
 
-	public void screencapture(WebDriver driver, String tname) throws IOException {
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File Source = ts.getScreenshotAs(OutputType.FILE);
-		File Target = new File(
-				"F:\\APCHEJMETERWORKSPACE\\EclipseForSelinium\\inetbankingV1\\screenshots" + tname + ".png");
-		FileUtils.copyFile(Source, Target);
-		System.out.println("screenshot is taken sucesssfully");
-
+	public static String screenShot(WebDriver driver, String filename) {
+		String dateName = new SimpleDateFormat("HH-mm-ss-dd-MM-yyyy").format(new Date());
+		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
+		String destination = System.getProperty("user.dir") + "\\ScreenShot\\" + filename + "_" + dateName + ".png";
+		File finalDestination = new File(destination);
+		try {
+			FileUtils.copyFile(source, finalDestination);
+			System.out.println("Screenshot taken sucessfully");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.getMessage();
+		}
+		return destination;
 	}
 
 	// AUTOMATICALLY GENERATE RANDOM NEW MAIL ID

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-19T15:11:07 IST" name="inetbankingV1" finished-at="2022-06-19T15:14:48 IST" duration-ms="221046">
+  <suite started-at="2022-06-21T12:14:59 IST" name="inetbankingV1" finished-at="2022-06-21T12:19:52 IST" duration-ms="293212">
     <groups>
     </groups>
-    <test started-at="2022-06-19T15:11:07 IST" name="BankingApp Test" finished-at="2022-06-19T15:14:48 IST" duration-ms="221046">
+    <test started-at="2022-06-21T12:14:59 IST" name="BankingApp Test" finished-at="2022-06-21T12:19:52 IST" duration-ms="293212">
       <class name="com.inetbanking.testcases.TC_AddNewCustomer_002">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testcases.TC_AddNewCustomer_002@cc43f62]" started-at="2022-06-19T15:12:55 IST" name="setup" finished-at="2022-06-19T15:13:50 IST" duration-ms="54906" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testcases.TC_AddNewCustomer_002@5e2c3d18]" started-at="2022-06-21T12:17:06 IST" name="setup" finished-at="2022-06-21T12:18:06 IST" duration-ms="59380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,29 +18,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AddNewCustomer()[pri:0, instance:com.inetbanking.testcases.TC_AddNewCustomer_002@cc43f62]" started-at="2022-06-19T15:13:50 IST" name="AddNewCustomer" finished-at="2022-06-19T15:14:47 IST" duration-ms="56771" status="FAIL">
+        <test-method signature="AddNewCustomer()[pri:0, instance:com.inetbanking.testcases.TC_AddNewCustomer_002@5e2c3d18]" started-at="2022-06-21T12:18:06 IST" name="AddNewCustomer" finished-at="2022-06-21T12:19:32 IST" duration-ms="86670" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='dismiss-button']/div/span"}
   (Session info: chrome=102.0.5005.115)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
-System info: host: 'ANJU', ip: '192.168.43.17', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+System info: host: 'ANJU', ip: '192.168.96.70', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1142a4e1204f2cf323f9062fdf84e8a5, findElement {using=xpath, value=//div[@id='dismiss-button']/div/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Windows\TEMP\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:55472}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55472/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1142a4e1204f2cf323f9062fdf84e8a5]]>
+Command: [7e4c9e330e61503cfd5d135204df99a3, findElement {using=xpath, value=//div[@id='dismiss-button']/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Windows\TEMP\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:61757}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61757/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e4c9e330e61503cfd5d135204df99a3]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='dismiss-button']/div/span"}
   (Session info: chrome=102.0.5005.115)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
-System info: host: 'ANJU', ip: '192.168.43.17', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+System info: host: 'ANJU', ip: '192.168.96.70', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1142a4e1204f2cf323f9062fdf84e8a5, findElement {using=xpath, value=//div[@id='dismiss-button']/div/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Windows\TEMP\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:55472}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55472/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1142a4e1204f2cf323f9062fdf84e8a5
+Command: [7e4c9e330e61503cfd5d135204df99a3, findElement {using=xpath, value=//div[@id='dismiss-button']/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Windows\TEMP\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:61757}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61757/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e4c9e330e61503cfd5d135204df99a3
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -95,13 +95,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddNewCustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.inetbanking.testcases.TC_AddNewCustomer_002@cc43f62]" started-at="2022-06-19T15:14:47 IST" name="teardown" finished-at="2022-06-19T15:14:48 IST" duration-ms="890" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.inetbanking.testcases.TC_AddNewCustomer_002@5e2c3d18]" started-at="2022-06-21T12:19:32 IST" name="teardown" finished-at="2022-06-21T12:19:52 IST" duration-ms="19841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.inetbanking.testcases.TC_AddNewCustomer_002 -->
       <class name="com.inetbanking.testcases.LoginTestCase_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testcases.LoginTestCase_001@909217e]" started-at="2022-06-19T15:11:07 IST" name="setup" finished-at="2022-06-19T15:12:07 IST" duration-ms="59690" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testcases.LoginTestCase_001@5afa3c9]" started-at="2022-06-21T12:14:59 IST" name="setup" finished-at="2022-06-21T12:15:24 IST" duration-ms="24599" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,18 +112,46 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logintestcase()[pri:0, instance:com.inetbanking.testcases.LoginTestCase_001@909217e]" started-at="2022-06-19T15:12:07 IST" name="logintestcase" finished-at="2022-06-19T15:12:54 IST" duration-ms="47783" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="logintestcase()[pri:0, instance:com.inetbanking.testcases.LoginTestCase_001@5afa3c9]" started-at="2022-06-21T12:15:24 IST" name="logintestcase" finished-at="2022-06-21T12:17:01 IST" duration-ms="96711" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'ANJU', ip: '192.168.96.70', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [46a2927628868b639f369cda619af60c, clickElement {id=802f5fd1-7f37-4e2a-92f3-94c142616119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Windows\TEMP\scoped_dir5...}, goog:chromeOptions: {debuggerAddress: localhost:65242}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65242/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (46a2927628868b639f369cda619af60c)] -> xpath: //a[text()='Log out']]
+Session ID: 46a2927628868b639f369cda619af60c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at com.inetbanking.testcases.LoginTestCase_001.logintestcase(LoginTestCase_001.java:37)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'ANJU', ip: '192.168.96.70', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [46a2927628868b639f369cda619af60c, clickElement {id=802f5fd1-7f37-4e2a-92f3-94c142616119}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Windows\TEMP\scoped_dir5...}, goog:chromeOptions: {debuggerAddress: localhost:65242}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65242/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (46a2927628868b639f369cda619af60c)] -> xpath: //a[text()='Log out']]
+Session ID: 46a2927628868b639f369cda619af60c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at com.inetbanking.pageobjects.LoginPageObjects.clicklogout(LoginPageObjects.java:32)
+at com.inetbanking.testcases.LoginTestCase_001.logintestcase(LoginTestCase_001.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,11 +186,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintestcase -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.inetbanking.testcases.LoginTestCase_001@909217e]" started-at="2022-06-19T15:12:54 IST" name="teardown" finished-at="2022-06-19T15:12:55 IST" duration-ms="874" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.inetbanking.testcases.LoginTestCase_001@5afa3c9]" started-at="2022-06-21T12:17:01 IST" name="teardown" finished-at="2022-06-21T12:17:06 IST" duration-ms="5215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

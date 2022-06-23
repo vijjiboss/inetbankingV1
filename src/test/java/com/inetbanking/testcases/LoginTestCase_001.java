@@ -1,21 +1,19 @@
 package com.inetbanking.testcases;
 
-
 import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.inetbanking.pageobjects.LoginPageObjects;
-import com.inetbanking.pageobjects.loginpage;
 
 public class LoginTestCase_001 extends BaseClass {
-	
+
 	@Test
 	public void logintestcase() throws InterruptedException, IOException {
-		
+
 		driver.get(baseurl);
-		logger.info("url is opened"); 
+		logger.info("url is opened");
 
 		LoginPageObjects lp = new LoginPageObjects(driver);
 		lp.setusername(username);
@@ -33,7 +31,6 @@ public class LoginTestCase_001 extends BaseClass {
 			logger.info("home page logout sucessfully");
 			Thread.sleep(3000);
 		} else {
-			screencapture(driver,"logintestcase");
 			Assert.assertTrue(false);
 
 			driver.switchTo().alert().accept();
